@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../assets/turned-on-black-framed-incandescent-bulb-pendant-lamp-1047270.jpg');
+}
+    
+    h2
+    {
+        text-align: center;
+    }
+    
+    select:invalid 
+    { 
+        color: gray; 
+    }
+    
+    .box_inscription{
+        max-width: 700px;
+        border-radius: 20px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.8);
+        box-sizing: border-box;
+        padding: 40px;
+        color: #fff;
+        margin-top: 100px ;
+    }
+    
+    option{
+        color: #fff;
+        background: black;
+    }
+    
+    input[type="text"], input[type=password],select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 5px;
+        background: rgba(0,0,0,0.10);
+        outline: none;
+        border: none;
+        border-bottom: 2px dotted #247ba0;
+        color: #fff;
+        border-radius: 5px;
+        margin: 5px;
+        font-weight: bold;
+    }
+    
+    input[type=submit]
+    {
+        width: 40%;
+        border: none;
+        margin-left: 10px;
+        background: #247ba0;
+        color: #ffffff !important;
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease 0s;
+    }
+    
+    input[type=submit]:hover
+    {
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: none;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    }
+    
+    
+    input:focus {
+        border-color: rgba(82, 168, 236, 0.75);
+        box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+    }
+        
+    .correct {
+        border-color: rgba(68, 191, 68, 0.75);
+    }
+        
+    .correct:focus {
+        border-color: rgba(68, 191, 68, 0.75);
+        box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+    }
+        
+    .incorrect {
+        border-color: rgba(191, 68, 68, 0.75);
+    }
+        
+    .incorrect:focus {
+        border-color: rgba(191, 68, 68, 0.75);
+        box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+    }
+        
+    .warning {
+        display: inline-block;
+        margin-left: 20px;
+        padding: 2px 4px;
+        border: 1px solid #555;
+        background-color: black;
+        border-radius: 4px;
+    }
