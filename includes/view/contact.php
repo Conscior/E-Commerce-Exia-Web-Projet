@@ -45,7 +45,7 @@
                 Send us a Message
             </h3>
 
-            <form class="wrap-form-reservation size22 m-l-r-auto">
+            <form class="wrap-form-reservation size22 m-l-r-auto" method="POST" action="../processing/processing_contact_us.php" >
                 <div class="row">
                     <div class="col-md-4">
                         <!-- Name -->
@@ -54,7 +54,7 @@
                         </span>
 
                         <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name" required/>
                         </div>
                     </div>
 
@@ -65,18 +65,19 @@
                         </span>
 
                         <div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="email" placeholder="Email" required/>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <!-- Phone -->
                         <span class="txt9">
-                            Phone
+                            Phone (213-XXX-XXX-XX)
                         </span>
 
                         <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="tel" name="phone" placeholder="Phone" 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" required/>
                         </div>
                     </div>
 
@@ -91,7 +92,7 @@
 
                 <div class="wrap-btn-booking flex-c-m m-t-13">
                     <!-- Button3 -->
-                    <button type="submit" class="btn3 flex-c-m size36 txt11 trans-0-4">
+                    <button type="submit" class="btn3 flex-c-m size36 txt11 trans-0-4" name="contact-submit">
                         Submit
                     </button>
                 </div>

@@ -1,6 +1,5 @@
 <?php
-   if(isset($_POST['signup-submit'])){
-      //d  
+   if(isset($_POST['signup-submit'])){  
     //setting up connection to db
     $servername = "localhost";
     $dbUsername = "root";

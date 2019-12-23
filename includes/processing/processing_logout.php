@@ -7,4 +7,5 @@ session_destroy();
 
 echo "<script>
 window.location.href = '../view/index.php';
+alert('Logged Out Succefully');
 </script>";
